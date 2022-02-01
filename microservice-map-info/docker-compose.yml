@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  microservice-map-info:
+    image: ${DOCKER_REGISTRY-}microservicemapinfo
+    build:
+      context: .
+      dockerfile: microservice-map-info/Dockerfile
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./microservice-map-info/prometheus:/etc/prometheus
+      - prometheus-data:/prometheus
+    command: --web.enable-lifecycle --config.file=/etc/prometheus/prometheus.yaml
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+    volumes:
+      - ./microservice-map-info/grafana:/etc/grafana/provisioning/datasources
+      - grafana-data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    # username: admin & password: admin
+
+volumes:
+  prometheus-data:
+  grafana-data:
+
+# reload prometheus without restarting:
+# curl -X POST http://localhost:9090/-/reload

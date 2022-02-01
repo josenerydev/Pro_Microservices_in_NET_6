@@ -1,0 +1,35 @@
+docker run -d -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+http://localhost:15672
+The default username and password for RabbitMQ are guest and guest.
+
+
+docker chapter
+docker run -d --name myWebSite -p 8080:80 nginxdemos/hello
+docker stop myWebSite
+ocker start myWebSite
+docker ps
+docker ps -a
+docker images
+docker inspect myWebSite
+docker inspect --format='{{.Config.Image}}' myWebSite
+docker rm myWebSite
+docker rmi nginxdemos/hello
+docker image tag hotshot:latest microservicemogul/hotshot:v1
+docker push microservicemogul/hotshot:v1
+
+az login
+az help
+az aks –help
+az group create --name apress-rg --location eastus
+az aks create --resource-group apress-rg --name apressAks Cluster --generate-ssh-keys --node-vm-size "Standard_B2s"
+
+kubectl version --client
+az aks get-credentials --resource-group apress-rg --name apressAksCluster Merged "apressAksCluster" as current context in C:\Users\myusername\.kube\ config
+
+kubectl apply -f app.yaml
+kubectl apply -f loadbalancer.yaml
+kubectl get pods
+kubectl get services
+
+grafana query for custom metrics
+increment(google_api_calls_total)

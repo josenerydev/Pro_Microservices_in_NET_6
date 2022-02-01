@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "microservice-map-info", "microservice-map-info\microservice-map-info.csproj", "{0C5023F1-F529-4FF6-964D-13355CEF3ED8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleMapInfo", "GoogleMapInfo\GoogleMapInfo.csproj", "{F797F152-ACA7-4417-99CC-62D987572757}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice_gRPC_Tester", "Microservice_gRPC_Tester\Microservice_gRPC_Tester.csproj", "{645629DD-6FC3-411E-9DB1-A1E21D1F764D}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{974CA978-032D-4FF5-BCC7-8329E47A18AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "microservice-map-tester", "..\microservice-map-tester\microservice-map-tester.csproj", "{E9472091-125C-4B41-82B0-3E44643F57DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C5023F1-F529-4FF6-964D-13355CEF3ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5023F1-F529-4FF6-964D-13355CEF3ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5023F1-F529-4FF6-964D-13355CEF3ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5023F1-F529-4FF6-964D-13355CEF3ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F797F152-ACA7-4417-99CC-62D987572757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F797F152-ACA7-4417-99CC-62D987572757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F797F152-ACA7-4417-99CC-62D987572757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F797F152-ACA7-4417-99CC-62D987572757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645629DD-6FC3-411E-9DB1-A1E21D1F764D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645629DD-6FC3-411E-9DB1-A1E21D1F764D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645629DD-6FC3-411E-9DB1-A1E21D1F764D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645629DD-6FC3-411E-9DB1-A1E21D1F764D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974CA978-032D-4FF5-BCC7-8329E47A18AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974CA978-032D-4FF5-BCC7-8329E47A18AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974CA978-032D-4FF5-BCC7-8329E47A18AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974CA978-032D-4FF5-BCC7-8329E47A18AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9472091-125C-4B41-82B0-3E44643F57DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9472091-125C-4B41-82B0-3E44643F57DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9472091-125C-4B41-82B0-3E44643F57DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9472091-125C-4B41-82B0-3E44643F57DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E27A6DDD-F8F6-4F91-A98D-2771A19DF208}
+	EndGlobalSection
+EndGlobal
